@@ -1,0 +1,87 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.header {
+  background-color: #4DB6AC;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.banner {
+  background-color: #B2DFDB;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.slogan {
+  background-color: #E0F2F1;
+  padding: 10px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.content {
+  background-color: #F57C00;
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  background-color: #FFF3E0;
+  padding: 20px;
+}
+
+.box {
+  background-color: #FFE0B2;
+  padding: 20px;
+  border: 1px solid #FFB74D;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #FF9800;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #F57C00;
+}
+
+.footer {
+  background-color: #D32F2F;
+  padding: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
