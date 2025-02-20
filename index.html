@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <audio autoplay loop>
+    <audio id="background-music" autoplay loop>
         <source src="./nhạc nền.mp3" type="audio/mpeg">
     </audio>        
     <header class="header">Bài tập của tổ 4</header>
     <section class="banner">Lớp 12A4</section>
     <section class="slogan">Học tập là không ngừng bỏ cuộc</section>
-
     <main>
         <section class="content">Phần nội dung chính</section>
         <div class="main-content">
@@ -69,8 +68,14 @@
             </div>
         </div>
     </main>
-
     <footer class="footer">Người thực hiện: Vũ Thị Thảo, Nguyễn Quang Trí, Nguyễn Tấn Dũng</footer>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var audio = document.getElementById("background-music");
+            audio.play().catch(error => {
+                console.log("Tự động phát bị chặn, cần tương tác của người dùng!");
+            });
+        });
+    </script>
 </body>
 </html>
